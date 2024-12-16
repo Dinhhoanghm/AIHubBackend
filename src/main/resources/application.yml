@@ -1,0 +1,19 @@
+server:
+  port: 9090
+spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+    deserialization:
+      FAIL_ON_UNKNOWN_PROPERTIES: false
+  datasource:
+    reborn:
+      jdbc-url: ""
+      username: ""
+      password:
+      type: com.zaxxer.hikari.HikariDataSource
+      enabled: true
+      hikari:
+        idle-timeout: 30000
