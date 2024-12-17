@@ -2,7 +2,6 @@ ongoing/backend/config/security/config/MethodSecurityConfig.class
 ongoing/backend/config/security/config/SecurityConfig.class
 ongoing/backend/config/jackson/JsonMapper.class
 ongoing/backend/config/security/config/CorsConfiguration.class
-ongoing/backend/config/authentication/JwtService.class
 ongoing/backend/config/security/config/CORSFilter.class
 ongoing/backend/service/ReadFileService.class
 ongoing/backend/config/jackson/json/CustomLinkedHashMap.class
@@ -11,8 +10,6 @@ ongoing/backend/config/authentication/IJwtParserService.class
 ongoing/backend/config/jackson/config/JSONDeserializer.class
 ongoing/backend/config/exception/EncodeException.class
 ongoing/backend/config/security/config/CorsConfiguration$1.class
-ongoing/backend/config/authentication/JwtAuthenticationEntryPoint.class
-ongoing/backend/config/authentication/JwtAuthenticationFilter.class
 ongoing/backend/config/model/SimpleSecurityUser.class
 ongoing/backend/config/jackson/json/JsonObject.class
 ongoing/backend/config/exception/DBException.class
