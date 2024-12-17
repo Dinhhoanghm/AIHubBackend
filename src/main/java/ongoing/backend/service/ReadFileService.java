@@ -8,10 +8,7 @@ import ongoing.backend.config.jackson.json.JsonObject;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.spark.SparkConf;
 import org.apache.spark.sql.*;
-import org.apache.spark.sql.types.DataTypes;
-import org.apache.spark.sql.types.Metadata;
-import org.apache.spark.sql.types.StructField;
-import org.apache.spark.sql.types.StructType;
+import org.apache.spark.sql.types.*;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
@@ -23,6 +20,7 @@ import java.nio.channels.Channels;
 import java.nio.channels.FileChannel;
 import java.nio.channels.ReadableByteChannel;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -46,37 +44,28 @@ public class ReadFileService {
       .getOrCreate();
     Dataset<Row> df = null;
 
+    if (filePath.endsWith(".xls") || filePath.endsWith(".xlsx")) {
+      df = spark.read()
+        .format("com.crealytics.spark.excel")
+        .option("header", "true")
+        .option("inferSchema", "true")
+        .load(filePath);
+    }
+
     if (filePath.endsWith(".csv")) {
-
-      Dataset<Row> firstRow = spark.read()
-        .option("header", "false")
-        .csv(filePath)
-        .limit(1);
-
-      Row row = firstRow.first();
-      String[] columnNames = new String[row.size()];
-      for (int i = 0; i < row.size(); i++) {
-        columnNames[i] = row.getString(i);
-      }
-
-      StructType schema = new StructType();
-      for (String columnName : columnNames) {
-        schema = schema.add(new StructField(columnName, DataTypes.StringType, true, Metadata.empty()));
-      }
-
       df = spark.read()
         .option("header", "true")
-        .schema(schema)
+        .option("inferSchema", "true")
         .csv(filePath);
     }
     if (filePath.endsWith(".xml")) {
       df = spark.read()
         .format("xml")
         .option("rowTag", "row")
+        .option("inferSchema", "true")
+        .option("header", "true")
         .option("attributePrefix", "_")
         .load(filePath);
-
-
       df = df.selectExpr("explode(row) as nestedRow")
         .select("nestedRow.*");
 
@@ -90,19 +79,37 @@ public class ReadFileService {
         .getJsonObject("view");
       List<Object> object = jsonObject.getJsonArray("columns")
         .getList();
-      List<String> columnNames = object
+      Map<String, String> columnTypeMap = new HashMap<>();
+      object
         .stream()
-        .map(s -> new JsonObject(encode(s)).getString("name"))
-        .collect(Collectors.toList());
+        .forEach(s -> {
+          JsonObject obj = new JsonObject(encode(s));
+          columnTypeMap.put(obj.getString("name"), obj.getString("dataTypeName"));
+        });
       StructType schema = new StructType();
-      for (String columnName : columnNames) {
-        schema = schema.add(new StructField(columnName, DataTypes.StringType, true, Metadata.empty()));
+      for (Map.Entry<String, String> entry : columnTypeMap.entrySet()) {
+        String columnName = entry.getKey();
+        String columnType = entry.getValue();
+        DataType dataType = DataTypes.NullType;
+        if (columnType.equalsIgnoreCase("text")) {
+          dataType = DataTypes.StringType;
+        }
+        if (columnType.equalsIgnoreCase("number")) {
+          dataType = DataTypes.IntegerType;
+        }
+        if (columnType.equalsIgnoreCase("number")) {
+          dataType = DataTypes.IntegerType;
+        }
+        if (columnType.equalsIgnoreCase("meta_data")) {
+          dataType = DataTypes.DateType;
+        }
+        schema = schema.add(new StructField(columnName, dataType, true, Metadata.empty()));
       }
       JsonArray value = data.getJsonArray("data");
       List<Row> dataList = new ArrayList<>();
       List<List<?>> dataObjects = value.getList();
 
-      for ( List<?> dataObject : dataObjects) {
+      for (List<?> dataObject : dataObjects) {
         dataObject = dataObject.stream().map(s -> encode(s)).collect(Collectors.toList());
         dataList.add(RowFactory.create(dataObject.toArray()));
       }
@@ -144,18 +151,13 @@ public class ReadFileService {
     String filePath = currentDir + File.separator + fileName + fileEndPoint;
     try (FileOutputStream fileOutputStream = new FileOutputStream(filePath);
          FileChannel fileChannel = fileOutputStream.getChannel()) {
-
-      // Use a buffer with a larger size to improve the download speed
-      ByteBuffer buffer = ByteBuffer.allocate(1024 * 1024); // 1MB buffer
-
-      // Transfer data from the URL to the file in chunks
+      ByteBuffer buffer = ByteBuffer.allocate(1024 * 1024);
       while (readableByteChannel.read(buffer) != -1) {
-        buffer.flip(); // Prepare buffer for writing to the file
+        buffer.flip();
         fileChannel.write(buffer);
-        buffer.clear(); // Clear buffer for the next read
+        buffer.clear();
       }
     } finally {
-      // Ensure the readableByteChannel is closed
       readableByteChannel.close();
     }
     return filePath;

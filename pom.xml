@@ -217,11 +217,12 @@
       <artifactId>commons-compiler</artifactId>
       <version>3.0.16</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.json/json -->
+
+    <!-- https://mvnrepository.com/artifact/com.crealytics/spark-excel -->
     <dependency>
-      <groupId>org.json</groupId>
-      <artifactId>json</artifactId>
-      <version>20231013</version>
+      <groupId>com.crealytics</groupId>
+      <artifactId>spark-excel_2.12</artifactId>
+      <version>0.14.0</version>
     </dependency>
 
   </dependencies>
