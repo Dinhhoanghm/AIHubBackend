@@ -6,6 +6,7 @@ import ongoing.backend.config.exception.ApiException;
 import ongoing.backend.config.jackson.json.JsonArray;
 import ongoing.backend.config.jackson.json.JsonObject;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.tuple.Pair;
 import org.apache.spark.SparkConf;
 import org.apache.spark.sql.*;
 import org.apache.spark.sql.types.*;
@@ -20,10 +21,7 @@ import java.nio.channels.Channels;
 import java.nio.channels.FileChannel;
 import java.nio.channels.ReadableByteChannel;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 import static ongoing.backend.config.jackson.json.Json.encode;
 
@@ -79,29 +77,44 @@ public class ReadFileService {
         .getJsonObject("view");
       List<Object> object = jsonObject.getJsonArray("columns")
         .getList();
-      Map<String, String> columnTypeMap = new HashMap<>();
+      List<Pair<String, String>> columnTypeMap = new ArrayList<>();
       object
-        .stream()
         .forEach(s -> {
           JsonObject obj = new JsonObject(encode(s));
-          columnTypeMap.put(obj.getString("name"), obj.getString("dataTypeName"));
+          Pair<String, String> objPair = Pair.of(obj.getString("name"), obj.getString("dataTypeName"));
+          columnTypeMap.add(objPair);
         });
       StructType schema = new StructType();
-      for (Map.Entry<String, String> entry : columnTypeMap.entrySet()) {
-        String columnName = entry.getKey();
-        String columnType = entry.getValue();
-        DataType dataType = DataTypes.NullType;
+      for (Pair<String, String> pair : columnTypeMap) {
+        String columnName = pair.getLeft();
+        String columnType = pair.getRight();
+        DataType dataType = DataTypes.StringType;
         if (columnType.equalsIgnoreCase("text")) {
           dataType = DataTypes.StringType;
         }
         if (columnType.equalsIgnoreCase("number")) {
+          dataType = DataTypes.StringType;
+        }
+        if (columnName.equalsIgnoreCase("sid")) {
+          dataType = DataTypes.StringType;
+        }
+        if (columnName.equalsIgnoreCase("id")) {
+          dataType = DataTypes.StringType;
+        }
+        if (columnName.equalsIgnoreCase("position")) {
           dataType = DataTypes.IntegerType;
         }
-        if (columnType.equalsIgnoreCase("number")) {
+        if (columnName.equalsIgnoreCase("created_at")) {
           dataType = DataTypes.IntegerType;
         }
-        if (columnType.equalsIgnoreCase("meta_data")) {
-          dataType = DataTypes.DateType;
+        if (columnName.equalsIgnoreCase("created_meta")) {
+          dataType = DataTypes.IntegerType;
+        }
+        if (columnName.equalsIgnoreCase("updated_at")) {
+          dataType = DataTypes.IntegerType;
+        }
+        if (columnName.equalsIgnoreCase("meta")) {
+          dataType = DataTypes.StringType;
         }
         schema = schema.add(new StructField(columnName, dataType, true, Metadata.empty()));
       }
@@ -110,7 +123,6 @@ public class ReadFileService {
       List<List<?>> dataObjects = value.getList();
 
       for (List<?> dataObject : dataObjects) {
-        dataObject = dataObject.stream().map(s -> encode(s)).collect(Collectors.toList());
         dataList.add(RowFactory.create(dataObject.toArray()));
       }
       df = spark.createDataFrame(dataList, schema);
