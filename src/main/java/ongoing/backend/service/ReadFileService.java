@@ -1,10 +1,10 @@
 package ongoing.backend.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.jayway.jsonpath.DocumentContext;
+import com.jayway.jsonpath.JsonPath;
 import lombok.SneakyThrows;
 import ongoing.backend.config.exception.ApiException;
-import ongoing.backend.config.jackson.json.JsonArray;
-import ongoing.backend.config.jackson.json.JsonObject;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.tuple.Pair;
 import org.apache.spark.SparkConf;
@@ -22,8 +22,7 @@ import java.nio.channels.FileChannel;
 import java.nio.channels.ReadableByteChannel;
 import java.util.ArrayList;
 import java.util.List;
-
-import static ongoing.backend.config.jackson.json.Json.encode;
+import java.util.Map;
 
 @Service
 public class ReadFileService {
@@ -70,18 +69,15 @@ public class ReadFileService {
     }
     if (filePath.endsWith(".json")) {
       ObjectMapper objectMapper = new ObjectMapper();
-      String content = encode(objectMapper.readValue(new File(filePath), Object.class));
-      JsonObject data = new JsonObject(content);
-      JsonObject jsonObject = data
-        .getJsonObject("meta")
-        .getJsonObject("view");
-      List<Object> object = jsonObject.getJsonArray("columns")
-        .getList();
+      String jsonpathViewPathData = "$['data']";
+      String jsonpathViewColumnPath = "$['meta']['view']['columns'][*]";
+      DocumentContext jsonContext = JsonPath.parse(new File(filePath));
+      List<List<?>> dataObjects = jsonContext.read(jsonpathViewPathData);
+      List<Map<String, String>> columnObject = jsonContext.read(jsonpathViewColumnPath);
       List<Pair<String, String>> columnTypeMap = new ArrayList<>();
-      object
+      columnObject
         .forEach(s -> {
-          JsonObject obj = new JsonObject(encode(s));
-          Pair<String, String> objPair = Pair.of(obj.getString("name"), obj.getString("dataTypeName"));
+          Pair<String, String> objPair = Pair.of(s.get("name"), s.get("dataTypeName"));
           columnTypeMap.add(objPair);
         });
       StructType schema = new StructType();
@@ -118,10 +114,7 @@ public class ReadFileService {
         }
         schema = schema.add(new StructField(columnName, dataType, true, Metadata.empty()));
       }
-      JsonArray value = data.getJsonArray("data");
       List<Row> dataList = new ArrayList<>();
-      List<List<?>> dataObjects = value.getList();
-
       for (List<?> dataObject : dataObjects) {
         dataList.add(RowFactory.create(dataObject.toArray()));
       }

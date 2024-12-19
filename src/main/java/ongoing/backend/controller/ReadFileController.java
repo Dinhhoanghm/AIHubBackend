@@ -1,12 +1,12 @@
 package ongoing.backend.controller;
 
 import ongoing.backend.config.exception.ApiException;
+import ongoing.backend.data.JsonNestedRequest;
+import ongoing.backend.data.JsonOutput;
+import ongoing.backend.service.ConvertJsonService;
 import ongoing.backend.service.ReadFileService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 
@@ -14,9 +14,12 @@ import java.io.IOException;
 @RequestMapping("/file")
 public class ReadFileController {
   private final ReadFileService readFileService;
+  private final ConvertJsonService convertJsonService;
 
-  public ReadFileController(ReadFileService readFileService) {
+  public ReadFileController(ReadFileService readFileService,
+                            ConvertJsonService convertJsonService) {
     this.readFileService = readFileService;
+    this.convertJsonService = convertJsonService;
   }
 
   @GetMapping("/download")
@@ -24,5 +27,10 @@ public class ReadFileController {
                                          @RequestParam("fileName") String fileName,
                                          @RequestParam("fileType") String fileType) throws IOException, ApiException {
     return ResponseEntity.ok(readFileService.convertFileToAvro(url, fileName, fileType));
+  }
+
+  @PostMapping("/convertJson")
+  public ResponseEntity<JsonOutput> convertJson(@RequestBody JsonNestedRequest jsonNestedRequest) throws IOException, ApiException {
+    return ResponseEntity.ok(convertJsonService.convertJsonToList(jsonNestedRequest));
   }
 }
