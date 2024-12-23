@@ -30,7 +30,7 @@ import static ongoing.backend.utils.ReadExcelUtil.*;
 @Log4j2
 public class ReadExcelService {
 
-  public JsonOutput readExcelToJsonOutput(MultipartFile multipartFile, Integer offset, Integer limit) throws IOException, InvalidFormatException {
+  public JsonOutput readExcelToJsonOutput(MultipartFile multipartFile, Integer offset, Integer limit, Integer headerDept, String sheetName) throws IOException, InvalidFormatException {
     InputStream initialStream = multipartFile.getInputStream();
     byte[] buffer = new byte[initialStream.available()];
     initialStream.read(buffer);
@@ -39,9 +39,8 @@ public class ReadExcelService {
     try (OutputStream outStream = new FileOutputStream(file)) {
       outStream.write(buffer);
     }
-
-    List<ColumnDataResponse> columnData = getColumn(file);
-    List<Object[]> value = readExcel(file, offset, limit).stream().map(s -> s.toArray())
+    List<ColumnDataResponse> columnData = getColumn(file, headerDept, sheetName);
+    List<Object[]> value = readExcel(file, offset, limit, sheetName,headerDept).stream().map(s -> s.toArray())
       .collect(Collectors.toList());
     List<Object> data = new ArrayList<>();
     data.add(columnData.toArray());
@@ -52,14 +51,14 @@ public class ReadExcelService {
     return jsonOutput;
   }
 
-  public List<List<Object>> readExcel(File file, Integer offset, Integer limit) {
+  public List<List<Object>> readExcel(File file, Integer offset, Integer limit, String sheetName,Integer headerDepth) throws IOException, InvalidFormatException {
     InputStream is;
     Workbook xssfWorkbook;
     try {
       is = new FileInputStream(file);
       xssfWorkbook = new XSSFWorkbook(is);
       is.close();
-      return transToObject(xssfWorkbook, offset, limit);
+      return transToObject(xssfWorkbook, offset, limit, sheetName,headerDepth);
     } catch (Exception e) {
       e.printStackTrace();
       throw new RuntimeException("Có lỗi xãy ra khi đọc file excel ：" + e.getMessage());
@@ -67,31 +66,48 @@ public class ReadExcelService {
   }
 
 
-  public List<ColumnDataResponse> getColumn(File file) throws IOException, InvalidFormatException {
+  public List<ColumnDataResponse> getColumn(File file, Integer headerDepth, String sheetName) throws IOException, InvalidFormatException {
     Workbook workbook = new XSSFWorkbook(file);
-    Sheet sheet = workbook.getSheetAt(0); // Get the first sheet
-    Row firstRow = sheet.getRow(0); // Get the first row
+    Sheet sheet;
+    if (!StringUtils.isBlank(sheetName)) {
+      sheet = workbook.getSheet(sheetName);
+    } else {
+      sheet = workbook.getSheetAt(0);
+    }
     List<ColumnDataResponse> columnDataList = new ArrayList<>();
-    if (firstRow != null) {
-      for (Cell cell : firstRow) {
-        String attributeName = getCellValue(cell); // Get cell value
-        String attributeType = getCellType(cell);  // Get cell type
-        ColumnDataResponse columnData = new ColumnDataResponse()
-          .setAlias(attributeName)
-          .setKey(attributeName)
-          .setType(attributeType); // Add data type
-
-        columnDataList.add(columnData);
+    Row dataRow = sheet.getRow(headerDepth);
+    for (int col = 0; col < sheet.getRow(headerDepth).getLastCellNum(); col++) {
+      for (int row = 0; row < headerDepth; row++) {
+        Row headerRow = sheet.getRow(row);
+        if (headerRow != null) {
+          Cell cell = headerRow.getCell(col);
+          Cell cellType = dataRow.getCell(col);
+          String attributeName = getCellValue(cell); // Get cell value
+          String attributeType = getCellType(cellType);  // Get cell type
+          if (attributeName != null && StringUtils.isNotBlank(attributeName) && ! attributeName.equals("")) {
+            ColumnDataResponse columnData = new ColumnDataResponse()
+              .setAlias(attributeName)
+              .setKey(attributeName)
+              .setType(attributeType); // Add data type
+            columnDataList.add(columnData);
+          }
+        }
       }
     }
+
     return columnDataList;
   }
 
 
-  private List<List<Object>> transToObject(Workbook xssfWorkbook, Integer offset, Integer limit) {
-    Sheet xssfSheet = xssfWorkbook.getSheetAt(0);
+  private List<List<Object>> transToObject(Workbook xssfWorkbook, Integer offset, Integer limit, String sheetName,Integer headerDepth) throws IOException, InvalidFormatException {
+    Sheet xssfSheet;
+    if (!StringUtils.isBlank(sheetName)) {
+      xssfSheet = xssfWorkbook.getSheet(sheetName);
+    } else {
+      xssfSheet = xssfWorkbook.getSheetAt(0); // Get the first sheet
+    }
     int totalRows = xssfSheet.getLastRowNum();
-    int startRow = Math.max(offset, 1);
+    int startRow = Math.max(offset, headerDepth);
     int endRow = Math.min(offset + limit - 1, totalRows);
     return IntStream.rangeClosed(startRow, endRow)
       .boxed()

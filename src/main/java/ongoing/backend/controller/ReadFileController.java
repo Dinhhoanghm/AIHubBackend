@@ -11,7 +11,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.File;
 import java.io.IOException;
 
 @RestController
@@ -43,8 +42,10 @@ public class ReadFileController {
   @PostMapping("/convert/excel")
   public ResponseEntity<JsonOutput> convertExcel(@RequestParam("file") MultipartFile file,
                                                  @RequestParam("offset") Integer offset,
-                                                 @RequestParam("limit") Integer limit
-  ) throws IOException, ApiException, InvalidFormatException {
-    return ResponseEntity.ok(readExcelService.readExcelToJsonOutput(file, offset, limit));
+                                                 @RequestParam("limit") Integer limit,
+                                                 @RequestParam(value = "headerDepth",defaultValue = "1") Integer headerDepth,
+                                                 @RequestParam(value = "sheetName",defaultValue = "") String sheetName
+                                                 ) throws IOException, ApiException, InvalidFormatException {
+    return ResponseEntity.ok(readExcelService.readExcelToJsonOutput(file, offset, limit, headerDepth,sheetName));
   }
 }
