@@ -29,6 +29,38 @@ import static ongoing.backend.utils.ReadExcelUtil.*;
 @Service
 @Log4j2
 public class ReadExcelService {
+  private static final Integer BATCH_SIZE = 10000;
+
+  public String readExcelToJsonOutput(MultipartFile multipartFile, Integer headerDept, String sheetName) throws IOException, InvalidFormatException {
+    InputStream initialStream = multipartFile.getInputStream();
+    byte[] buffer = new byte[initialStream.available()];
+    initialStream.read(buffer);
+    String path = "src/main/resources/targetFile.xlsx";
+    File file = new File(path);
+    try (OutputStream outStream = new FileOutputStream(file)) {
+      outStream.write(buffer);
+    }
+    List<ColumnDataResponse> columnData = getColumn(file, headerDept, sheetName);
+    int totalRows = getTotalRowCount(file, sheetName);
+    int offset = headerDept;
+    int batchNumber = 1;
+    String jsonFilePath = "output.json";
+    while (offset < totalRows) {
+      List<Object[]> value = readExcel(file, offset, BATCH_SIZE, sheetName, headerDept).stream().map(s -> s.toArray())
+        .collect(Collectors.toList());
+      List<Object> data = new ArrayList<>();
+      data.add(columnData.toArray());
+      data.add(value.toArray());
+      JsonOutput jsonOutput = new JsonOutput();
+      jsonOutput.setData(data.toArray());
+
+      writeJsonToFile(jsonOutput, jsonFilePath);
+      offset += BATCH_SIZE;
+      batchNumber++;
+    }
+    Files.deleteIfExists(file.toPath());
+    return "Successfull";
+  }
 
   public JsonOutput readExcelToJsonOutput(MultipartFile multipartFile, Integer offset, Integer limit, Integer headerDept, String sheetName) throws IOException, InvalidFormatException {
     InputStream initialStream = multipartFile.getInputStream();
@@ -40,7 +72,7 @@ public class ReadExcelService {
       outStream.write(buffer);
     }
     List<ColumnDataResponse> columnData = getColumn(file, headerDept, sheetName);
-    List<Object[]> value = readExcel(file, offset, limit, sheetName,headerDept).stream().map(s -> s.toArray())
+    List<Object[]> value = readExcel(file, offset, limit, sheetName, headerDept).stream().map(s -> s.toArray())
       .collect(Collectors.toList());
     List<Object> data = new ArrayList<>();
     data.add(columnData.toArray());
@@ -51,14 +83,14 @@ public class ReadExcelService {
     return jsonOutput;
   }
 
-  public List<List<Object>> readExcel(File file, Integer offset, Integer limit, String sheetName,Integer headerDepth) throws IOException, InvalidFormatException {
+  public List<List<Object>> readExcel(File file, Integer offset, Integer limit, String sheetName, Integer headerDepth) throws IOException, InvalidFormatException {
     InputStream is;
     Workbook xssfWorkbook;
     try {
       is = new FileInputStream(file);
       xssfWorkbook = new XSSFWorkbook(is);
       is.close();
-      return transToObject(xssfWorkbook, offset, limit, sheetName,headerDepth);
+      return transToObject(xssfWorkbook, offset, limit, sheetName, headerDepth);
     } catch (Exception e) {
       e.printStackTrace();
       throw new RuntimeException("Có lỗi xãy ra khi đọc file excel ：" + e.getMessage());
@@ -84,7 +116,7 @@ public class ReadExcelService {
           Cell cellType = dataRow.getCell(col);
           String attributeName = getCellValue(cell); // Get cell value
           String attributeType = getCellType(cellType);  // Get cell type
-          if (attributeName != null && StringUtils.isNotBlank(attributeName) && ! attributeName.equals("")) {
+          if (attributeName != null && StringUtils.isNotBlank(attributeName) && !attributeName.equals("")) {
             ColumnDataResponse columnData = new ColumnDataResponse()
               .setAlias(attributeName)
               .setKey(attributeName)
@@ -99,7 +131,7 @@ public class ReadExcelService {
   }
 
 
-  private List<List<Object>> transToObject(Workbook xssfWorkbook, Integer offset, Integer limit, String sheetName,Integer headerDepth) throws IOException, InvalidFormatException {
+  private List<List<Object>> transToObject(Workbook xssfWorkbook, Integer offset, Integer limit, String sheetName, Integer headerDepth) throws IOException, InvalidFormatException {
     Sheet xssfSheet;
     if (!StringUtils.isBlank(sheetName)) {
       xssfSheet = xssfWorkbook.getSheet(sheetName);

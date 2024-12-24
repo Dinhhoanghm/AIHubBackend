@@ -43,9 +43,17 @@ public class ReadFileController {
   public ResponseEntity<JsonOutput> convertExcel(@RequestParam("file") MultipartFile file,
                                                  @RequestParam("offset") Integer offset,
                                                  @RequestParam("limit") Integer limit,
-                                                 @RequestParam(value = "headerDepth",defaultValue = "1") Integer headerDepth,
-                                                 @RequestParam(value = "sheetName",defaultValue = "") String sheetName
-                                                 ) throws IOException, ApiException, InvalidFormatException {
-    return ResponseEntity.ok(readExcelService.readExcelToJsonOutput(file, offset, limit, headerDepth,sheetName));
+                                                 @RequestParam(value = "headerDepth", defaultValue = "1") Integer headerDepth,
+                                                 @RequestParam(value = "sheetName", defaultValue = "") String sheetName
+  ) throws IOException, ApiException, InvalidFormatException {
+    return ResponseEntity.ok(readExcelService.readExcelToJsonOutput(file, offset, limit, headerDepth, sheetName));
+  }
+
+  @PostMapping("/convert/json")
+  public ResponseEntity<String> convertToJson(@RequestParam("file") MultipartFile file,
+                                              @RequestParam(value = "headerDepth", defaultValue = "1") Integer headerDepth,
+                                              @RequestParam(value = "sheetName", defaultValue = "") String sheetName
+  ) throws IOException, ApiException, InvalidFormatException {
+    return ResponseEntity.ok(readExcelService.readExcelToJsonOutput(file, headerDepth, sheetName));
   }
 }

@@ -1,11 +1,15 @@
 package ongoing.backend.utils;
 
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.CellType;
-import org.apache.poi.ss.usermodel.DateUtil;
-import org.apache.poi.ss.usermodel.Row;
+import ongoing.backend.data.dto.JsonOutput;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.jetbrains.annotations.NotNull;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
@@ -133,6 +137,24 @@ public class ReadExcelUtil {
         return "Formula";
       default:
         return "Unknown";
+    }
+  }
+
+  public static int getTotalRowCount(File file, String sheetName) throws IOException, InvalidFormatException {
+    try (Workbook workbook = new XSSFWorkbook(file)) {
+      Sheet sheet;
+      if (!StringUtils.isBlank(sheetName)) {
+        sheet = workbook.getSheet(sheetName);
+      } else {
+        sheet = workbook.getSheetAt(0);
+      }
+      return sheet.getLastRowNum() + 1; // Include header row
+    }
+  }
+
+  public static void writeJsonToFile(JsonOutput jsonOutput, String filePath) throws IOException {
+    try (FileWriter writer = new FileWriter(filePath)) {
+      writer.write(jsonOutput.toString());
     }
   }
 }
