@@ -1,4 +1,4 @@
-package ongoing.backend.service;
+package ongoing.backend.service.readFile;
 
 import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.JsonPath;

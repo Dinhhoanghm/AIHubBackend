@@ -1,11 +1,13 @@
 package ongoing.backend.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import ongoing.backend.config.exception.ApiException;
+import ongoing.backend.config.logback.LoggerUtility;
 import ongoing.backend.data.dto.JsonNestedRequest;
 import ongoing.backend.data.dto.JsonOutput;
-import ongoing.backend.service.ConvertJsonService;
-import ongoing.backend.service.ReadExcelService;
-import ongoing.backend.service.ReadFileService;
+import ongoing.backend.service.readFile.ConvertJsonService;
+import ongoing.backend.service.readFile.ReadExcelService;
+import ongoing.backend.service.readFile.ReadFileService;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +15,9 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 
+import static ongoing.backend.config.logback.LoggerUtility.logInfo;
+
+@Slf4j
 @RestController
 @RequestMapping("/file")
 public class ReadFileController {
@@ -36,6 +41,7 @@ public class ReadFileController {
 
   @PostMapping("/convertJson")
   public ResponseEntity<JsonOutput> convertJson(@RequestBody JsonNestedRequest jsonNestedRequest) throws IOException, ApiException {
+    logInfo("test");
     return ResponseEntity.ok(convertJsonService.convertJsonToList(jsonNestedRequest));
   }
 

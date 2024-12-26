@@ -1,4 +1,4 @@
-package ongoing.backend.service;
+package ongoing.backend.service.readFile;
 
 import lombok.extern.log4j.Log4j2;
 import ongoing.backend.config.jackson.json.JsonObject;
@@ -43,7 +43,6 @@ public class ReadExcelService {
     List<ColumnDataResponse> columnData = getColumn(file, headerDept, sheetName);
     int totalRows = getTotalRowCount(file, sheetName);
     int offset = headerDept;
-    int batchNumber = 1;
     String jsonFilePath = "output.json";
     while (offset < totalRows) {
       List<Object[]> value = readExcel(file, offset, BATCH_SIZE, sheetName, headerDept).stream().map(s -> s.toArray())
@@ -56,7 +55,6 @@ public class ReadExcelService {
 
       writeJsonToFile(jsonOutput, jsonFilePath);
       offset += BATCH_SIZE;
-      batchNumber++;
     }
     Files.deleteIfExists(file.toPath());
     return "Successfull";
