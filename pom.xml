@@ -217,6 +217,17 @@
       <artifactId>commons-compiler</artifactId>
       <version>3.0.16</version>
     </dependency>
+    <dependency>
+      <groupId>org.dhatim</groupId>
+      <artifactId>fastexcel</artifactId>
+      <version>0.14.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.dhatim</groupId>
+      <artifactId>fastexcel-reader</artifactId>
+      <version>0.14.0</version>
+    </dependency>
 
     <!-- https://mvnrepository.com/artifact/com.crealytics/spark-excel -->
     <dependency>

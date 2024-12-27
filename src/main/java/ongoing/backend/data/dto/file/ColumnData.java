@@ -1,4 +1,4 @@
-package ongoing.backend.data.dto;
+package ongoing.backend.data.dto.file;
 
 import lombok.Data;
 import lombok.experimental.Accessors;

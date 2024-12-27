@@ -1,12 +1,13 @@
 package ongoing.backend.utils;
 
-import ongoing.backend.data.dto.JsonOutput;
+import ongoing.backend.data.dto.file.JsonOutput;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.jetbrains.annotations.NotNull;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -153,8 +154,8 @@ public class ReadExcelUtil {
   }
 
   public static void writeJsonToFile(JsonOutput jsonOutput, String filePath) throws IOException {
-    try (FileWriter writer = new FileWriter(filePath)) {
-      writer.write(jsonOutput.toString());
+    try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
+      writer.write(jsonOutput.toString()); // Efficiently write JSON data to the file
     }
   }
 }

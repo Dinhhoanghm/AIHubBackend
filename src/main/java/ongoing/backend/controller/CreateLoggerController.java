@@ -2,8 +2,6 @@ package ongoing.backend.controller;
 
 import ongoing.backend.config.exception.ApiException;
 import ongoing.backend.config.logback.LoggerConfig;
-import ongoing.backend.data.dto.JsonNestedRequest;
-import ongoing.backend.data.dto.JsonOutput;
 import ongoing.backend.service.log.LogbackCreateXmlService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

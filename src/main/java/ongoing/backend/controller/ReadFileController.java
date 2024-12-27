@@ -2,17 +2,18 @@ package ongoing.backend.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import ongoing.backend.config.exception.ApiException;
-import ongoing.backend.config.logback.LoggerUtility;
-import ongoing.backend.data.dto.JsonNestedRequest;
-import ongoing.backend.data.dto.JsonOutput;
+import ongoing.backend.data.dto.file.JsonNestedRequest;
+import ongoing.backend.data.dto.file.JsonOutput;
 import ongoing.backend.service.readFile.ConvertJsonService;
 import ongoing.backend.service.readFile.ReadExcelService;
 import ongoing.backend.service.readFile.ReadFileService;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.xml.stream.XMLStreamException;
 import java.io.IOException;
 
 import static ongoing.backend.config.logback.LoggerUtility.logInfo;
@@ -55,11 +56,11 @@ public class ReadFileController {
     return ResponseEntity.ok(readExcelService.readExcelToJsonOutput(file, offset, limit, headerDepth, sheetName));
   }
 
-  @PostMapping("/convert/json")
+  @PostMapping(value = "/convert/json")
   public ResponseEntity<String> convertToJson(@RequestParam("file") MultipartFile file,
                                               @RequestParam(value = "headerDepth", defaultValue = "1") Integer headerDepth,
                                               @RequestParam(value = "sheetName", defaultValue = "") String sheetName
-  ) throws IOException, ApiException, InvalidFormatException {
+  ) throws IOException, ApiException, InvalidFormatException, XMLStreamException {
     return ResponseEntity.ok(readExcelService.readExcelToJsonOutput(file, headerDepth, sheetName));
   }
 }

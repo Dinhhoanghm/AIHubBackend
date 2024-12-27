@@ -1,6 +1,6 @@
 package ongoing.backend.data.mapper;
 
-import ongoing.backend.data.dto.ColumnData;
+import ongoing.backend.data.dto.file.ColumnData;
 import ongoing.backend.data.response.ColumnDataResponse;
 import org.mapstruct.Mapper;
 
