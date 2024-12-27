@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @Service
@@ -37,7 +38,9 @@ public class FastExcelService {
             row.forEach(cell -> {
               if (cell != null) {
                 int columnIndex = cell.getColumnIndex();
-                columnIndexes.add(columnIndex);
+                if (!columnIndexes.contains(columnIndex)) {
+                  columnIndexes.add(columnIndex);
+                }
               }
             });
           });
