@@ -48,10 +48,10 @@ public class FastExcelService {
           for (Integer columnIndex : columnIndexes) {
             Cell cell = row.getCell(columnIndex);
             if (cell != null) {
-              Object value = cell.getValue(); // Retrieve the cell value
+              Object value = cell.getValue();
               rowData.add(value);
             } else {
-              rowData.add(null); // Assign null if the cell does not exist
+              rowData.add(null);
             }
           }
           data.add(rowData);
@@ -106,7 +106,7 @@ public class FastExcelService {
       ColumnDataResponse columnData = new ColumnDataResponse()
         .setAlias(entry.getValue())
         .setKey(entry.getValue())
-        .setType(dataTypeMap.get(entry.getKey())); // Add data type
+        .setType(dataTypeMap.get(entry.getKey()));
       columnDataResponses.add(columnData);
     }
     return columnDataResponses;
