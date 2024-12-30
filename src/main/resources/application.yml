@@ -17,3 +17,8 @@ spring:
       enabled: true
       hikari:
         idle-timeout: 30000
+
+logging:
+  file:
+    path: /home/hoangdd
+    name: /home/hoangdd/application.log

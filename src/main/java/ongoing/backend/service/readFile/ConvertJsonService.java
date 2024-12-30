@@ -73,7 +73,7 @@ public class ConvertJsonService {
 
   private String determineDataType(List<Object> values) {
     if (values == null || values.isEmpty()) {
-      return "Unknown"; // Default for empty or null values
+      return "Unknown";
     }
     Set<String> types = new HashSet<>();
     for (Object value : values) {
@@ -87,7 +87,6 @@ public class ConvertJsonService {
         types.add("Object");
       }
     }
-    // If all values have the same type, return it; otherwise, return "Mixed"
     return types.size() == 1 ? types.iterator().next() : "Mixed";
   }
 }
