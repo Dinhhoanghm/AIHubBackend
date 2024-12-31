@@ -8,13 +8,17 @@ import ongoing.backend.service.readFile.ConvertJsonService;
 import ongoing.backend.service.readFile.ReadExcelService;
 import ongoing.backend.service.readFile.ReadFileService;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.xml.stream.XMLStreamException;
+import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
+import java.util.Collections;
 
 import static ongoing.backend.config.logback.LoggerUtility.logInfo;
 
@@ -42,7 +46,8 @@ public class ReadFileController {
 
   @PostMapping("/convertJson")
   public ResponseEntity<JsonOutput> convertJson(@RequestBody JsonNestedRequest jsonNestedRequest) throws IOException, ApiException {
-    logInfo("test");
+    logInfo("Error");
+    Files.write(Path.of("/home/hoangdd/aiv/data.log"), Collections.singletonList("New Line Content"), StandardOpenOption.APPEND);
     return ResponseEntity.ok(convertJsonService.convertJsonToList(jsonNestedRequest));
   }
 

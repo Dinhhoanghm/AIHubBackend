@@ -20,5 +20,10 @@ spring:
 
 logging:
   file:
-    path: /home/hoangdd
-    name: /home/hoangdd/application.log
+    path: /home/hoangdd/aiv
+thread:
+  pool:
+    size: 4
+log:
+  queue:
+    capacity: 1000

@@ -15,6 +15,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.function.Consumer;
 
+import static java.nio.file.StandardWatchEventKinds.ENTRY_CREATE;
 import static java.nio.file.StandardWatchEventKinds.ENTRY_MODIFY;
 
 @Service
@@ -24,20 +25,22 @@ public class MonitoringFileService {
 
   private final WatchKey key;
   private final Path monitoringDirectory;
-  private final Path file;
   private final List<Consumer<Path>> callbacks = new CopyOnWriteArrayList<>();
   private final ExecutorService executorService = Executors.newSingleThreadExecutor();
 
-  public MonitoringFileService(@Value("${logging.file.path}") String directory,
-                               @Value("${logging.file.name}") String fileName) throws IOException {
-
+  public MonitoringFileService(@Value("${logging.file.path}") String directory) throws IOException {
     this.monitoringDirectory = new FileSystemResource(directory).getFile().toPath();
-    this.file = monitoringDirectory.resolve(fileName);
     final WatchService ws = FileSystems.getDefault().newWatchService();
 
-    key = monitoringDirectory.register(ws, ENTRY_MODIFY);
+    key = monitoringDirectory.register(ws, ENTRY_MODIFY, ENTRY_CREATE);
 
     executorService.submit(this::monitor);
+  }
+
+  public List<Path> getAllFiles() throws IOException {
+    return Files.list(monitoringDirectory)
+      .filter(Files::isRegularFile)
+      .toList();
   }
 
   public void listen(Consumer<Path> consumer) {
@@ -53,7 +56,7 @@ public class MonitoringFileService {
         for (final WatchEvent<?> event : key.pollEvents()) {
           final Path changed = monitoringDirectory.resolve((Path) event.context());
 
-          if (event.kind() == ENTRY_MODIFY && changed.equals(file)) {
+          if (event.kind() == ENTRY_MODIFY && Files.isReadable(changed)) {
             log.trace("monitor - ENTRY_MODIFY: " + changed);
             callbacks.forEach(c -> c.accept(changed));
           }
