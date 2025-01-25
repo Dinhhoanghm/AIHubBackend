@@ -17,6 +17,8 @@ spring:
       enabled: true
       hikari:
         idle-timeout: 30000
+  rapidApi:
+    secret-key: c96e6964c0msh137adb94c882604p1a174bjsn84638220f135
 
 logging:
   file:

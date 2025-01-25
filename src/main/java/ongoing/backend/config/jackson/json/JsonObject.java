@@ -79,6 +79,11 @@ public class JsonObject {
         return JsonMapper.getObjectMapper().convertValue(map, type);
     }
 
+  public <T> T mapToCamelCase(Class<T> type) {
+    if (map.isEmpty()) return null;
+    return JsonMapper.getObjectMapperCamelCase().convertValue(map, type);
+  }
+
     public boolean isEmpty() {
         return map.isEmpty();
     }

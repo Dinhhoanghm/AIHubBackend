@@ -11,7 +11,7 @@ import ongoing.backend.data.mapper.ColumnDataMapper;
 import ongoing.backend.data.response.ColumnDataResponse;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.*; 
 
 @Service
 public class ConvertJsonService {
@@ -69,6 +69,40 @@ public class ConvertJsonService {
     }
     JsonOutput output = new JsonOutput().setData(data.toArray());
     return output;
+  }
+
+  public Map<String,Object> convertNestParamsToColum(JsonNestedRequest jsonNestedRequest) throws ApiException {
+    List<NestParamData> nestParams = jsonNestedRequest.getNestParams();
+    DocumentContext jsonContext = JsonPath.parse(jsonNestedRequest.getJson());
+    List<ColumnDataResponse> columnData = new ArrayList<>();
+    int size = 0;
+    for (NestParamData nestParamData : nestParams) {
+      ColumnData column = new ColumnData().setAlias(nestParamData.getColumnName())
+        .setKey(nestParamData.getColumnName());
+      List<Object> value = null;
+      try {
+        Object val = jsonContext.read(nestParamData.getNestString());
+        if (val instanceof List) {
+          value = (List<Object>) val;
+        } else {
+          value = Collections.singletonList(val);
+        }
+      } catch (Exception e) {
+        throw new ApiException(String.format("Failed to parse json %s", nestParamData.getNestString()));
+      }
+      if (value != null) {
+        if (value.size() > size) {
+          size = value.size();
+        }
+        column.setData(value);
+      }
+      String dataType = determineDataType(value);
+      column.setType(dataType);
+      columnData.add(columnDataMapper.toColumnDataResponse(column));
+    }
+    Map<String,Object> response = new HashMap<>();
+    response.put("data", columnData);
+    return response;
   }
 
   private String determineDataType(List<Object> values) {

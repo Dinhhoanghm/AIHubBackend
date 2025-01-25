@@ -13,6 +13,7 @@ public class DefaultHttpSecurityResolver implements HttpSecurityResolver {
       .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
       .authorizeRequests()
       .antMatchers("/file/**").permitAll()
+      .antMatchers("/api/**").permitAll()
       .anyRequest()
       .permitAll();
   }
