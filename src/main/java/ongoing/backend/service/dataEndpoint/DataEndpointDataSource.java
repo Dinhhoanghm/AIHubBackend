@@ -1,6 +1,8 @@
 package ongoing.backend.service.dataEndpoint;
 
 import com.aiv.datasource.IEDatasource;
+import lombok.extern.java.Log;
+import lombok.extern.log4j.Log4j2;
 import ongoing.backend.config.exception.ApiException;
 import ongoing.backend.config.jackson.json.JsonObject;
 import ongoing.backend.data.rapidApi.CategoryRequest;
@@ -15,6 +17,7 @@ import java.util.Map;
 import static ongoing.backend.config.jackson.json.Json.encodeCamelCase;
 
 @Service
+@Log4j2
 public class DataEndpointDataSource implements IEDatasource {
   private final RapidApiService rapidApiService;
   private final ConvertJsonService convertJsonService;
@@ -43,10 +46,14 @@ public class DataEndpointDataSource implements IEDatasource {
 
   @Override
   public Map<String, Object> getMetaData(Map<String, Object> data) {
-    String endpoint = data.getOrDefault("endpoint", "").toString();
-    String slugName = data.getOrDefault("slugName", "").toString();
-    String params = data.getOrDefault("params", "").toString();
-    String nestParams = data.getOrDefault("nestParams", "").toString();
+//    String endpoint = data.getOrDefault("endpoint", "").toString();
+    String endpoint = "jobs-api14";
+//    String slugName = data.getOrDefault("slugName", "").toString();
+    String slugName = "v2/list";
+//    String params = data.getOrDefault("params", "").toString();
+    String params = "query=Web Developewer&location=United States";
+//    String nestParams = data.getOrDefault("nestParams", "").toString();
+    String nestParams = "[\"$.jobs[*].title\",\"$.jobs[*].company\",\"$.jobs[*].location\"]";
     try {
       return rapidApiService.getRapidMetaDataResponse(endpoint, slugName, params, nestParams);
     } catch (IOException e) {
@@ -60,7 +67,9 @@ public class DataEndpointDataSource implements IEDatasource {
   public Map<String, Object> testConnection(Map<String, Object> map) {
     try {
       Map<String, Object> cart = new HashMap<String, Object>();
+
       cart.put("message", "Connection Successfully.");
+      log.info("Successfully connected to database.");
       return cart;
     } catch (Exception e) {
       e.printStackTrace();
