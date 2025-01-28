@@ -47,9 +47,9 @@ public class DataEndpointDataSource implements IEDatasource {
   @Override
   public Map<String, Object> getMetaData(Map<String, Object> data) {
 //    String endpoint = data.getOrDefault("endpoint", "").toString();
-    String endpoint = "jobs-api14";
+    String endpoint = "v2/list";
 //    String slugName = data.getOrDefault("slugName", "").toString();
-    String slugName = "v2/list";
+    String slugName = "jobs-api14";
 //    String params = data.getOrDefault("params", "").toString();
     String params = "query=Web Developewer&location=United States";
 //    String nestParams = data.getOrDefault("nestParams", "").toString();
