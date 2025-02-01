@@ -1,7 +1,6 @@
 package ongoing.backend.service.dataEndpoint;
 
 import com.aiv.datasource.IEDatasource;
-import lombok.extern.java.Log;
 import lombok.extern.log4j.Log4j2;
 import ongoing.backend.config.exception.ApiException;
 import ongoing.backend.config.jackson.json.JsonObject;
@@ -36,7 +35,7 @@ public class DataEndpointDataSource implements IEDatasource {
     String params = data.getOrDefault("params", "").toString();
     String nestParams = data.getOrDefault("nestParams", "").toString();
     try {
-      return rapidApiService.getRapidDataResponse(endpoint,slugName,params,nestParams);
+      return rapidApiService.getRapidDataResponse(endpoint, slugName, params, nestParams);
     } catch (IOException e) {
       throw new RuntimeException(e);
     } catch (ApiException e) {
@@ -56,6 +55,17 @@ public class DataEndpointDataSource implements IEDatasource {
     String nestParams = "[\"$.jobs[*].title\",\"$.jobs[*].company\",\"$.jobs[*].location\"]";
     try {
       return rapidApiService.getRapidMetaDataResponse(endpoint, slugName, params, nestParams);
+    } catch (IOException e) {
+      throw new RuntimeException(e);
+    } catch (ApiException e) {
+      throw new RuntimeException(e);
+    }
+  }
+
+  public Map<String, Object> getDataApiExtraInfo(Map<String, Object> data) {
+    String endpointId = data.getOrDefault("endpointId", "").toString();
+    try {
+      return rapidApiService.getApiExtraInfo(endpointId);
     } catch (IOException e) {
       throw new RuntimeException(e);
     } catch (ApiException e) {

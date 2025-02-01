@@ -11,5 +11,5 @@ public class RapidCategoryData {
   private String apiOwnerSlug;
   private String apiSlug;
   private String apiVersionId;
-  private List<String> endPoints;
+  private List<RapidEndpointData> endPoints;
 }

@@ -5,8 +5,8 @@ import lombok.experimental.Accessors;
 
 @Data
 @Accessors(chain = true)
-public class RapidEndpointData {
-  private String route;
-  private String method;
-  private String id;
+public class ApiParameter {
+  private String name;
+  private String paramType;
+  private String condition;
 }

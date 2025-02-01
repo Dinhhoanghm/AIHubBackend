@@ -1,5 +1,8 @@
 package ongoing.backend.service.rapidApi;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 import okhttp3.*;
@@ -16,12 +19,10 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
+import static ongoing.backend.config.jackson.JsonMapper.getObjectMapperCamelCase;
 import static ongoing.backend.config.jackson.json.Json.encode;
 import static ongoing.backend.config.jackson.json.Json.encodeCamelCase;
 
@@ -86,6 +87,184 @@ public class RapidApiService {
     return convertJsonService.convertNestParamsToColum(nestedRequest);
   }
 
+  public Map<String, Object> getApiExtraInfo(String endPointId) throws IOException, ApiException {
+    OkHttpClient client = new OkHttpClient().newBuilder()
+      .build();
+    MediaType mediaType = MediaType.parse("application/json");
+    RequestBody body = RequestBody.create(mediaType, String.format("{\"query\":\"query getFullApiEndpoint($id: ID!) {\\n" +
+      "  endpoint(id: $id) {\\n" +
+      "    ...FullEndpointInfo\\n" +
+      "  }\\n" +
+      "}\\n" +
+      "\\n" +
+      "fragment FullEndpointInfo on Endpoint {\\n" +
+      "  id\\n" +
+      "  index\\n" +
+      "  createdAt\\n" +
+      "  group\\n" +
+      "  method\\n" +
+      "  name\\n" +
+      "  route\\n" +
+      "  description\\n" +
+      "  isGraphQL\\n" +
+      "  security {\\n" +
+      "    ...SecurityInfo\\n" +
+      "  }\\n" +
+      "  externalDocs {\\n" +
+      "    description\\n" +
+      "    url\\n" +
+      "  }\\n" +
+      "  graphQLSchema(withOverrides: true) {\\n" +
+      "    schema\\n" +
+      "  }\\n" +
+      "  params {\\n" +
+      "    parameters\\n" +
+      "  }\\n" +
+      "  responsePayloads {\\n" +
+      "    ...ResponsePayloadInfo\\n" +
+      "  }\\n" +
+      "  requestPayloads {\\n" +
+      "    ...RequestPayloadInfo\\n" +
+      "  }\\n" +
+      "}\\n" +
+      "\\n" +
+      "fragment SecurityInfo on BaseAuthentication {\\n" +
+      "  apiVersionId\\n" +
+      "  name\\n" +
+      "  description\\n" +
+      "  securityType\\n" +
+      "  requirements {\\n" +
+      "    id\\n" +
+      "    scope\\n" +
+      "  }\\n" +
+      "  ... on HttpAuthentication {\\n" +
+      "    scheme\\n" +
+      "  }\\n" +
+      "  ... on ApiKeyAuthentication {\\n" +
+      "    authParam {\\n" +
+      "      name\\n" +
+      "      description\\n" +
+      "    }\\n" +
+      "    in\\n" +
+      "  }\\n" +
+      "  ... on Oauth2Authentication {\\n" +
+      "    accessTokenUrl\\n" +
+      "    authorizationUrl\\n" +
+      "    grantType\\n" +
+      "    separator\\n" +
+      "    clientSecretRequired\\n" +
+      "    clientAuthentication\\n" +
+      "    handleOauthTokenAtFrontend\\n" +
+      "    scopes {\\n" +
+      "      name\\n" +
+      "      description\\n" +
+      "    }\\n" +
+      "    extraMetadata {\\n" +
+      "      pkceEnabled\\n" +
+      "      codeChallengeMethod\\n" +
+      "      customOAuth2AuthPrefix\\n" +
+      "      JWTProfile\\n" +
+      "    }\\n" +
+      "  }\\n" +
+      "}\\n" +
+      "\\n" +
+      "fragment ResponsePayloadInfo on ResponsePayload {\\n" +
+      "  id\\n" +
+      "  name\\n" +
+      "  format\\n" +
+      "  body\\n" +
+      "  headers\\n" +
+      "  description\\n" +
+      "  type\\n" +
+      "  statusCode\\n" +
+      "  apiendpoint\\n" +
+      "  examples\\n" +
+      "  schema\\n" +
+      "}\\n" +
+      "\\n" +
+      "fragment RequestPayloadInfo on RequestPayload {\\n" +
+      "  id\\n" +
+      "  name\\n" +
+      "  format\\n" +
+      "  body\\n" +
+      "  description\\n" +
+      "  type\\n" +
+      "  statusCode\\n" +
+      "  apiendpoint\\n" +
+      "  examples\\n" +
+      "  schema\\n" +
+      "}\",\"variables\":{\"id\":\"%s\"}}", endPointId));
+    Request request = new Request.Builder()
+      .url("https://rapidapi.com/gateway/graphql")
+      .method("POST", body)
+      .addHeader("accept", "*/*")
+      .addHeader("accept-language", "en-US,en;q=0.9")
+      .addHeader("content-type", "application/json")
+      .addHeader("cookie", "__variation__FFNewModalExperiment=0.72; __variation__FFPostSignupModalMarketplace=0.95; __variation__FFNewHero=0.8; __variation__FFNewOrgCreatePage=0.23; __variation__FFAskCompanyInfo=0.35; __variation__FFEmbedTeamsVideo=0.99; __variation__FFTeamsLandingPageOrgButtonText=0.87; __variation__FFOrgCreationWithUsersInvitaions=0.4; __variation__FFApiPlaygroundABTest=0.03; __variation__FF_SearchInput_PlaceHolder=0.44; __variation__FFSubscribeModalDirectNavToPricing=0.54; __variation__FFNewPricingPage=0.86; __variation__FFPricingPaymentsAdminsInvite=0.29; __variation__FFPricingPersonalNoOrg=0.64; __variation__FFTryItFreeBottomMPTeamsPage=0.39; __variation__FFFastSubscribeToFreePlanOnMarketplace=0.25; __variation__FFNewPaymentPage=0.87; __variation__FFNewMarketplaceHomepageContent=0.13; __variation__FFAPILimitModalExperiment=0.85; jwt_auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAxMDIyNjcsIm1hc2hhcGVJZCI6IjY3OGZhNjQ5ZTQ1MTBhMDAxODE1N2JiYyIsIm9yaWdpbl9zaXRlIjoiZGVmYXVsdCIsImlzTmV3VXNlciI6dHJ1ZSwiaXNBdXRoZW50aWNhdGVkQnlTU08iOnRydWUsImVtYWlsIjoiZG9kaW5oaG9hbmdobUBnbWFpbC5jb20iLCJ3YXNTZXNzaW9uSXNzdWVkIjp0cnVlLCJpYXQiOjE3Mzc0Njc0NjUsImV4cCI6MTc0NTI0MzQ2NX0.dQaNXuxMdoPbFiShGT53dnpRflHZh19k44F5sqWu-SA; connect.sid=s%3AOgC7qrqgT6Bp3-xq1kf_Jl04gdtiYRsl.VMWsNNZQqqhCgPyYuqjd9zxFdppfvfI0ZnrkrPbAxwE; __stripe_mid=1f5e62e7-3db3-4277-9061-7a06377620f9ad374a; ajs_anonymous_id=3747DFE6-0082-4B5D-B1F6-53E3286C19E8; rapidapi-context={%22entityId%22:%2210102267%22%2C%22type%22:%22User%22}; _csrf=8ybkBvx_S8xwSGsAkzLc_EMw; theme=light; cf_clearance=pUyXaS_.X_Bd9I4t236NfgD67ZppsAUWU_WAmfadqUs-1738206597-1.2.1.1-tWXF2nUVaLf5TJxKVD8V6CyRj0AX7aULNHBd66qdr2_kIxBRgUt8xThhbnYQohhDzQem1BV3Xk8R6Ed5_XAQ_8JvQfklnPgR4Zjjax4o2nSQeHpG4Sz6DADzoMA0pKIJb6K3Hr6GPivBpq237aUJN7wq6F0i9dWJwn5RXRbSDUrS7OEsnHorWIhDOMSJFmHUAV3IJTr877ZtppfoVcQWg9_TM6CoTgb5RQZEkB.Tk_AfwwDFl3DS.fbGk.J.hfp70rf7W_tLxDLi0KpNgYZGtEuoG5n4NZX2biDJ1v5E6iY; __cf_bm=fsxgOcN7T1q2OSjNZTx2wPUf6heqqw2HBJnWV8QZMS0-1738379323-1.0.1.1-cpcvY0laJ8yz8qdQqCRrdyJBj79pDhgrE.evCEEYiulkNNO5YPlODJMNHDKDgJgQKnC_KXipbbvNYqoCD0Stig; __cflb=02DiuHPSNb326nZUQB6NoY4qqsJaLefLQ2X3U5FeYoqVn; __stripe_sid=0ad18817-e0d1-4163-93bf-d82b6328a4eef5e5a1; __cf_bm=vointQNxmvdz2oBd2hTP8RrwZZuVq.0tgs.7EHMa2EM-1738380434-1.0.1.1-Uy22ZvKRSWvAAY_UiKj7JNhSXgmFbyMQlq1SCi27IrBJddewDewSi4LBVNBSfRERRJ3DQlf2ULTVL033bAApAg; connect.sid=s%3AOgC7qrqgT6Bp3-xq1kf_Jl04gdtiYRsl.VMWsNNZQqqhCgPyYuqjd9zxFdppfvfI0ZnrkrPbAxwE")
+      .addHeader("csrf-token", "Qpn7JhFe-3f9Cg_qiBXsN31IcnkRdQL0b06E")
+      .addHeader("origin", "https://rapidapi.com")
+      .addHeader("sec-ch-ua", "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"")
+      .addHeader("sec-ch-ua-mobile", "?0")
+      .addHeader("sec-ch-ua-platform", "\"Linux\"")
+      .addHeader("sec-fetch-dest", "empty")
+      .addHeader("sec-fetch-mode", "cors")
+      .addHeader("sec-fetch-site", "same-origin")
+      .addHeader("user-agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36")
+      .build();
+    Response response = client.newCall(request).execute();
+    Map<String, Object> result = new HashMap<>();
+    String content = response.body().string();
+    List<ApiParameter> apiParameters = getApiParameters(content);
+    List<String> attributes = getDataResponseAttribute(content);
+    result.put("apiParameters", apiParameters);
+    result.put("attributes", attributes);
+    return result;
+  }
+
+  private List<ApiParameter> getApiParameters(String json) {
+    JsonObject jsonObject = new JsonObject(json).getJsonObject("data")
+      .getJsonObject("endpoint")
+      .getJsonObject("params");
+    if (jsonObject == null) {
+      return null;
+    }
+    JsonArray jsonArray = jsonObject.getJsonArray("parameters");
+    List<ApiParameter> apiParameters = jsonArray.mapToCamelCase(ApiParameter.class);
+    return apiParameters;
+  }
+
+  private List<String> getDataResponseAttribute(String json) throws JsonProcessingException {
+    JsonObject jsonObject = new JsonObject(json).getJsonObject("data")
+      .getJsonObject("endpoint")
+      .getJsonArray("responsePayloads").getJsonObject(0);
+    Object value = jsonObject.getJsonObject("examples")
+      .getJsonObject("New Example")
+      .getValue("value");
+    String encodeValue = encode(value);
+    List<String> attributes = new ArrayList<>();
+    ObjectMapper objectMapper = getObjectMapperCamelCase();
+    JsonNode rootNode = objectMapper.readTree(encodeValue);
+    storeJsonAttributes(rootNode, "", attributes);
+    return attributes;
+  }
+
+  private void storeJsonAttributes(JsonNode node, String path, List<String> jsonList) {
+    if (node.isObject()) {
+      Iterator<Map.Entry<String, JsonNode>> fields = node.fields();
+      while (fields.hasNext()) {
+        Map.Entry<String, JsonNode> field = fields.next();
+        storeJsonAttributes(field.getValue(), path + "/" + field.getKey(), jsonList);
+      }
+    } else if (node.isArray()) {
+      for (int i = 0; i < node.size(); i++) {
+        storeJsonAttributes(node.get(i), path + "[*]", jsonList);
+      }
+    } else {
+      jsonList.add(path + " : " + node.asText());
+    }
+  }
+
+
   public List<RapidCategoryData> getRapidCategories(CategoryRequest categoryRequest) throws IOException {
     OkHttpClient client = new OkHttpClient().newBuilder()
       .build();
@@ -135,7 +314,7 @@ public class RapidApiService {
         throw new RuntimeException(ex);
       }
       rapidCategoryData.setApiVersionId(apiVersionKey);
-      List<String> endPoints = new ArrayList<>();
+      List<RapidEndpointData> endPoints = new ArrayList<>();
       try {
         endPoints = getEndpoints(apiVersionKey);
       } catch (IOException ex) {
@@ -181,7 +360,7 @@ public class RapidApiService {
     return apiVersionId;
   }
 
-  private List<String> getEndpoints(String apiVersionId) throws IOException {
+  private List<RapidEndpointData> getEndpoints(String apiVersionId) throws IOException {
     OkHttpClient client = new OkHttpClient().newBuilder()
       .build();
     MediaType mediaType = MediaType.parse("application/json");
@@ -215,14 +394,20 @@ public class RapidApiService {
     JsonArray jsonArray = new JsonObject(content).getJsonObject("data")
       .getJsonObject("apiVersion")
       .getJsonArray("endpoints");
-    List<String> endpoints = new ArrayList<>();
+    List<RapidEndpointData> endpoints = new ArrayList<>();
     jsonArray.forEach(e -> {
-      String endpoint = new JsonObject(encodeCamelCase(e)).getJsonObject("map")
+      JsonObject data = new JsonObject(encodeCamelCase(e)).getJsonObject("map");
+      String endpoint = data
         .getString("route");
-      String method = new JsonObject(encodeCamelCase(e)).getJsonObject("map")
+      String method = data
         .getString("method");
+      String id = data.getString("id");
       if (method.equalsIgnoreCase("GET")) {
-        endpoints.add(endpoint);
+        RapidEndpointData rdp = new RapidEndpointData();
+        rdp.setId(id);
+        rdp.setMethod(endpoint);
+        rdp.setRoute(method);
+        endpoints.add(rdp);
       }
     });
     return endpoints;

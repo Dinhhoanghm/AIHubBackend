@@ -1,7 +1,6 @@
 package ongoing.backend.controller;
 
 import ongoing.backend.config.exception.ApiException;
-import ongoing.backend.data.dto.file.JsonOutput;
 import ongoing.backend.service.dataEndpoint.DataEndpointDataSource;
 import ongoing.backend.service.rapidApi.RapidApiService;
 import org.springframework.http.HttpStatus;
@@ -26,8 +25,8 @@ public class DataEndpointController {
 
   @PostMapping("/data")
   public ResponseEntity<Map<String, Object>> getAllData(@RequestBody Map<String, Object> data) {
-    String endpoint = data.getOrDefault("endpoint","").toString();
-    String slugName = data.getOrDefault("slugName","").toString();
+    String endpoint = data.getOrDefault("endpoint", "").toString();
+    String slugName = data.getOrDefault("slugName", "").toString();
     String params = data.getOrDefault("params", "").toString();
     String nestParams = data.getOrDefault("nestParams", "").toString();
     try {
@@ -58,8 +57,24 @@ public class DataEndpointController {
     }
   }
 
+  @PostMapping("/extraInfo")
+  public ResponseEntity<Map<String, Object>> getApiExtraInfo(@RequestBody Map<String, Object> data) {
+    try {
+      Map<String, Object> cart = new HashMap<String, Object>();
+      cart.putAll(dataSource.getDataApiExtraInfo(data));
+
+      if (cart.isEmpty()) {
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+      }
+      return new ResponseEntity<>(cart, HttpStatus.OK);
+    } catch (Exception e) {
+      return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+  }
+
+
   @PostMapping("/connection")
-  public ResponseEntity<Map<String,Object>> getConnection(@RequestBody Map<String,Object> data) {
+  public ResponseEntity<Map<String, Object>> getConnection(@RequestBody Map<String, Object> data) {
     try {
       return new ResponseEntity<>(dataSource.testConnection(data), HttpStatus.OK);
     } catch (Exception e) {
@@ -79,11 +94,11 @@ public class DataEndpointController {
   }
 
   @GetMapping("/getResponse")
-  public ResponseEntity<Map<String,Object>> getObjects(@RequestParam("endpoint") String endPoint,
-                                               @RequestParam("slugName") String slugName,
-                                               @RequestParam("params") String params,
-                                               @RequestParam("nestParams") String nestParams
+  public ResponseEntity<Map<String, Object>> getObjects(@RequestParam("endpoint") String endPoint,
+                                                        @RequestParam("slugName") String slugName,
+                                                        @RequestParam("params") String params,
+                                                        @RequestParam("nestParams") String nestParams
   ) throws IOException, ApiException {
-    return ResponseEntity.ok(rapidApiService.getRapidDataResponse(endPoint, slugName,params,nestParams));
+    return ResponseEntity.ok(rapidApiService.getRapidDataResponse(endPoint, slugName, params, nestParams));
   }
 }
