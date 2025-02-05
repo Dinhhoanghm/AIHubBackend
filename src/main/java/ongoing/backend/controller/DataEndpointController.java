@@ -1,6 +1,7 @@
 package ongoing.backend.controller;
 
 import ongoing.backend.config.exception.ApiException;
+import ongoing.backend.config.jackson.json.JsonObject;
 import ongoing.backend.service.dataEndpoint.DataEndpointDataSource;
 import ongoing.backend.service.rapidApi.RapidApiService;
 import org.springframework.http.HttpStatus;
@@ -25,13 +26,11 @@ public class DataEndpointController {
 
   @PostMapping("/data")
   public ResponseEntity<Map<String, Object>> getAllData(@RequestBody Map<String, Object> data) {
-    String endpoint = data.getOrDefault("endpoint", "").toString();
-    String slugName = data.getOrDefault("slugName", "").toString();
-    String params = data.getOrDefault("params", "").toString();
-    String nestParams = data.getOrDefault("nestParams", "").toString();
+    String params = data.getOrDefault("query","").toString();
+    Map<String,Object> mapParams = new JsonObject(params).getMap();
     try {
       Map<String, Object> cart = new HashMap<String, Object>();
-      cart.putAll(dataSource.getData(data));
+      cart.putAll(dataSource.getData(mapParams));
       if (cart.isEmpty()) {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
       }
@@ -46,7 +45,9 @@ public class DataEndpointController {
   public ResponseEntity<Map<String, Object>> getAllMetadata(@RequestBody Map<String, Object> data) {
     try {
       Map<String, Object> cart = new HashMap<String, Object>();
-      cart.putAll(dataSource.getMetaData(data));
+      String params = data.getOrDefault("query","").toString();
+      Map<String,Object> mapParams = new JsonObject(params).getMap();
+      cart.putAll(dataSource.getMetaData(mapParams));
 
       if (cart.isEmpty()) {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);

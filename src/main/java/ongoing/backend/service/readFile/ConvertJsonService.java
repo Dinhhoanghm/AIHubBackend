@@ -101,7 +101,7 @@ public class ConvertJsonService {
       columnData.add(columnDataMapper.toColumnDataResponse(column));
     }
     Map<String,Object> response = new HashMap<>();
-    response.put("medata", columnData.toArray());
+    response.put("metadata", columnData.toArray());
     return response;
   }
 

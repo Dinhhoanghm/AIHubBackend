@@ -45,14 +45,14 @@ public class DataEndpointDataSource implements IEDatasource {
 
   @Override
   public Map<String, Object> getMetaData(Map<String, Object> data) {
-//    String endpoint = data.getOrDefault("endpoint", "").toString();
-    String endpoint = "v2/list";
-//    String slugName = data.getOrDefault("slugName", "").toString();
-    String slugName = "jobs-api14";
-//    String params = data.getOrDefault("params", "").toString();
-    String params = "query=Web Developewer&location=United States";
-//    String nestParams = data.getOrDefault("nestParams", "").toString();
-    String nestParams = "[\"$.jobs[*].title\",\"$.jobs[*].company\",\"$.jobs[*].location\"]";
+    String endpoint = data.getOrDefault("endpoint", "").toString();
+//    String endpoint = "v2/list";
+    String slugName = data.getOrDefault("slugName", "").toString();
+//    String slugName = "jobs-api14";
+    String params = data.getOrDefault("params", "").toString();
+//    String params = "query=Web Developewer&location=United States";
+    String nestParams = data.getOrDefault("nestParams", "").toString();
+//    String nestParams = "[\"$.jobs[*].title\",\"$.jobs[*].company\",\"$.jobs[*].location\"]";
     try {
       return rapidApiService.getRapidMetaDataResponse(endpoint, slugName, params, nestParams);
     } catch (IOException e) {
@@ -78,7 +78,8 @@ public class DataEndpointDataSource implements IEDatasource {
     try {
       Map<String, Object> cart = new HashMap<String, Object>();
 
-      cart.put("message", "Connection Successfully.");
+      cart.put("message", "Success");
+      cart.put("connection", "Success");
       log.info("Successfully connected to database.");
       return cart;
     } catch (Exception e) {
