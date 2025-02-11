@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-02-03T16:08:18+0700",
-    comments = "version: 1.4.2.Final, compiler: javac, environment: Java 17.0.13 (Ubuntu)"
+    date = "2025-02-10T17:46:48+0700",
+    comments = "version: 1.4.2.Final, compiler: javac, environment: Java 17.0.14 (Ubuntu)"
 )
 @Component
 public class ColumnDataMapperImpl implements ColumnDataMapper {
