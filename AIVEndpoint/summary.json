@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-02-20T14:34:12.134556",
+  "openapi_file": "/home/hoangdd/Downloads/jobs/own/OnGoingProject/AllRestEndpotinAIV6Spring.json",
+  "collection_file": "/home/hoangdd/Downloads/jobs/own/OnGoingProject/AIVEndpoint/collection.json",
+  "environment_file": "/home/hoangdd/Downloads/jobs/own/OnGoingProject/AIVEndpoint/environment.json",
+  "curl_commands_file": "/home/hoangdd/Downloads/jobs/own/OnGoingProject/AIVEndpoint/all_curl_commands.txt",
+  "curl_shell_script": "/home/hoangdd/Downloads/jobs/own/OnGoingProject/AIVEndpoint/run_all_commands.sh",
+  "responses_dir": "/home/hoangdd/Downloads/jobs/own/OnGoingProject/AIVEndpoint/postman_responses",
+  "endpoints": 285,
+  "postman_upload": {
+    "success": true,
+    "collection_id": "8dea7a55-1323-4065-a0bf-3903571008c7",
+    "environment_id": "5a99705e-2e1d-438c-b6df-82a5d444bea5",
+    "message": "Successfully uploaded collection and environment to Postman"
+  },
+  "instructions": {
+    "postman_import": "Open Postman and import the collection and environment files",
+    "postman_run": "Run the collection in Postman",
+    "manual_execution": "Execute curl commands from the curl commands file"
+  }
+}

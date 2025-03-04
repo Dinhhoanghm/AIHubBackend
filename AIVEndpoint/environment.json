@@ -1,0 +1,19 @@
+{
+  "id": "1740036843.611675",
+  "name": "OpenAPI Test Environment",
+  "values": [
+    {
+      "key": "lastResponse",
+      "value": "",
+      "type": "any",
+      "enabled": true
+    },
+    {
+      "key": "responseFileName",
+      "value": "",
+      "type": "string",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "environment"
+}

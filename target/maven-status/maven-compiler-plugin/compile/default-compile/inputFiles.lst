@@ -9,6 +9,7 @@
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/controller/ReadFileController.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/data/rapidApi/ApiParameter.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/service/readFile/ConvertJsonService.java
+/home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/service/snowflake/SnowFlakeDatasource.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/data/dto/file/AttributionNameResponse.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/config/exception/DBException.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/data/mapper/ColumnDataMapper.java
@@ -16,6 +17,7 @@
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/config/rxTemplate/RxTemplate.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/config/exception/ApiException.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/config/security/config/CorsConfiguration.java
+/home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/service/snowflake/SnowFlakeService.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/config/authentication/JwtService.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/utils/StringUtil.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/data/rapidApi/RapidEndpointData.java
@@ -35,6 +37,7 @@
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/data/dto/file/JsonOutput.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/config/security/config/CORSFilter.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/data/rapidApi/RapidApiVersionGraphQLRequest.java
+/home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/service/webScraping/WebScrapingService.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/config/authentication/JwtAuthenticationFilter.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/config/jackson/json/Json.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/config/security/DefaultHttpSecurityResolver.java
@@ -42,14 +45,19 @@
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/config/websocket/WebSocketTemplate.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/data/response/ColumnDataResponse.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/service/readFile/ReadFileService.java
+/home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/controller/RedshiftController.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/data/rapidApi/RapidEndpointGraphQLRequest.java
+/home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/controller/SnowFlakeController.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/config/logback/LoggerUtility.java
+/home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/service/awsRedshift/sql/RedshiftSQLStatementConstant.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/config/annotation/ExcelRow.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/config/exception/DecodeException.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/config/annotation/SupplierThrowable.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/service/readFile/FastExcelService.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/data/rapidApi/RapidCategoryGraphQLRequest.java
+/home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/service/snowflake/SnowFlakeCommon.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/data/rapidApi/RapidCategoryData.java
+/home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/service/snowflake/SnowflakeSQLStatementConstant.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/service/log/LogsWebSocketService.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/data/dto/file/JsonNestedRequest.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/data/constant/LogConstant.java
@@ -63,7 +71,9 @@
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/config/authentication/JwtAuthenticationEntryPoint.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/data/rapidApi/SearchApiWhereInput.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/utils/ReadExcelUtil.java
+/home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/service/webScraping/WebDataSource.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/config/security/config/MethodSecurityConfig.java
+/home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/controller/WebSourceDataController.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/config/security/config/SecurityConfig.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/data/dto/file/ReadOptions.java
 /home/hoangdd/Downloads/jobs/own/OnGoingProject/src/main/java/ongoing/backend/config/jackson/json/JsonObject.java

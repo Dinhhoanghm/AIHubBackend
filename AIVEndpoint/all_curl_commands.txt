@@ -1,0 +1,3956 @@
+# v5_tokens_generate_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/tokens/generate' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_tokens_delete_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/tokens/delete' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_jreport_file_run_j_report_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/jreport/file/run_j_report' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_data_datasources_test_connection_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/data/datasources/test/connection' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_data_datasource_updates_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/data/datasource/updates' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_data_datasource_saves_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/data/datasource/saves' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_data_datasource_name_avail_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/data/datasource/name_avail' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_data_datasource_deletes_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/data/datasource/deletes' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_data_dataset_spreview_new_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/data/dataset/spreview_new' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json'
+
+# v5_data_dataset_spreview_group_cds_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/data/dataset/spreview_group_cds' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json'
+
+# v5_data_dataset_query_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/data/dataset/query' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_data_dataset_preview_in_json_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/data/dataset/preview_in_json' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json'
+
+# v5_data_dataset_pipelinedetails_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/data/dataset/pipelinedetails' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json'
+
+# v5_data_dataset_parameter_values_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/data/dataset/parameter_values' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_data_dataset_metadata_from_ds_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/data/dataset/metadata_from_ds' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json'
+
+# v5_data_dataset_fetchdata_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/data/dataset/fetchdata' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json'
+
+# v5_data_dataset_datasource_details_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/data/dataset/datasource_details' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_data_dataset_datasource_columns_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/data/dataset/datasource_columns' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_data_d_fetch_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/data/d/fetch' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json'
+
+# v5_data_createdataset_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/data/createdataset' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_breport_file_schedule_run_rptdocument_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/breport/file/schedule/run_rptdocument' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_breport_file_run_rptdesign_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/breport/file/run_rptdesign' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_breport_file_run_b_report_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/breport/file/run_b_report' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_breport_file_merge_request_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/breport/file/merge_request' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_breport_file_library_parameters_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/breport/file/library_parameters' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_breport_file_cascading_parameters_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/breport/file/cascading_parameters' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_webhook_add_webhook_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/webhook/add_webhook' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_user_user_exist_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/user/user_exist' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_quick_link_user_exist_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/quick_link/user_exist' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_external_user_exist_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/external/user_exist' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_user_update_user_profile_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/user/update_user_profile' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_quick_link_update_user_profile_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/quick_link/update_user_profile' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_external_update_user_profile_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/external/update_user_profile' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_user_update_props_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/user/update_props' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_quick_link_update_props_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/quick_link/update_props' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_external_update_props_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/external/update_props' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_user_update_personalize_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/user/update_personalize' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_quick_link_update_personalize_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/quick_link/update_personalize' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_external_update_personalize_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/external/update_personalize' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_user_update_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/user/update' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_quick_link_update_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/quick_link/update' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_external_update_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/external/update' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_user_refresh_props_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/user/refresh_props' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_quick_link_refresh_props_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/quick_link/refresh_props' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_external_refresh_props_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/external/refresh_props' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_user_enable_backup_user_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/user/enable_backup_user' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_quick_link_enable_backup_user_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/quick_link/enable_backup_user' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_external_enable_backup_user_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/external/enable_backup_user' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_user_disable_backup_user_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/user/disable_backup_user' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json'
+
+# v5_api_quick_link_disable_backup_user_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/quick_link/disable_backup_user' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json'
+
+# v5_api_external_disable_backup_user_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/external/disable_backup_user' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json'
+
+# v5_api_user_change_password_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/user/change_password' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_quick_link_change_password_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/quick_link/change_password' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_external_change_password_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/external/change_password' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_user_addquick_link_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/user/addquick_link' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_quick_link_addquick_link_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/quick_link/addquick_link' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_external_addquick_link_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/external/addquick_link' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_user_add_personalize_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/user/add_personalize' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_quick_link_add_personalize_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/quick_link/add_personalize' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_external_add_personalize_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/external/add_personalize' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_user_add_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/user/add' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_quick_link_add_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/quick_link/add' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_external_add_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/external/add' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_upload_zip_zip_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/upload_zip/zip' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_session_re_schedule_session_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/session/re_schedule_session' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json'
+
+# v5_api_role_users_by_roles_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/role/users_by_roles' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_role_update_user_role_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/role/update_user_role' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_role_update_role_user_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/role/update_role_user' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_role_update_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/role/update' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_role_roleexists_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/role/roleexists' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_role_add_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/role/add' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_request_task_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/request/task' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_request_task_re_execute_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/request/task/re_execute' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_request_report_management_add_comments_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/request/report_management/add_comments' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_request_re_run_ds_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/request/re_run_ds' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_request_re_run_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/request/re_run' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_request_delete_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/request/delete' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_request_clone_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/request/clone' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_request_cancel_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/request/cancel' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_request_add_multiple_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/request/add_multiple' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_request_add_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/request/add' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_quick_run_update_parameters_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/quick_run/update_parameters' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_quick_run_update_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/quick_run/update' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_quick_run_delete_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/quick_run/delete' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_quick_run_add_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/quick_run/add' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_parameter_update_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/parameter/update' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_parameter_param_shared_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/parameter/param_shared' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_parameter_delete_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/parameter/delete' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_parameter_add_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/parameter/add' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_notification_update_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/notification/update' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_enc_dec_update_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/enc_dec/update' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_notification_mark_read_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/notification/mark_read' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_enc_dec_mark_read_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/enc_dec/mark_read' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_notification_delete_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/notification/delete' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_enc_dec_delete_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/enc_dec/delete' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_notification_comments_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/notification/comments' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_enc_dec_comments_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/enc_dec/comments' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_notification_addmessage_comments_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/notification/addMessage_comments' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_enc_dec_addmessage_comments_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/enc_dec/addMessage_comments' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_notification_add_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/notification/add' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_enc_dec_add_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/enc_dec/add' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_notification_acknowledge_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/notification/acknowledge' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_enc_dec_acknowledge_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/enc_dec/acknowledge' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_message_update_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/message/update' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_message_delete_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/message/delete' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_message_add_comments_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/message/add_comments' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_message_add_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/message/add' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_message_acknowledge_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/message/acknowledge' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_merge_add_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/merge/add' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_mapping_lov_row_map_delete_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/mapping/lov_row_map_delete' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# merge_lov_row_map_delete_-_post \
+  curl --location 'http://localhost:8080/aiv/merge/lov_row_map_delete' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_mapping_addmerge_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/mapping/addmerge' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# merge_addmerge_-_post \
+  curl --location 'http://localhost:8080/aiv/merge/addmerge' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_mapping_add_lov_map_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/mapping/add_lov_map' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# merge_add_lov_map_-_post \
+  curl --location 'http://localhost:8080/aiv/merge/add_lov_map' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_mapping_add_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/mapping/add' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# merge_add_-_post \
+  curl --location 'http://localhost:8080/aiv/merge/add' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_types_delete_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file_types/delete' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_types_add_file_type_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file_types/add_file_type' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_update_privileges_widget_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/update_privileges_widget' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_update_privileges_widget_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/update_privileges_widget' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_update_privileges_widget_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/update_privileges_widget' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_update_privileges_widget_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/update_privileges_widget' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_update_privileges_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/update_privileges' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_update_privileges_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/update_privileges' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_update_privileges_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/update_privileges' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_update_privileges_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/update_privileges' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_update_link_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/update_link' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_update_link_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/update_link' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_update_link_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/update_link' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_update_link_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/update_link' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_send_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/send' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_send_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/send' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_send_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/send' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_send_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/send' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_security_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/security' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_security_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/security' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_security_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/security' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_security_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/security' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_save_privileges_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/save_privileges' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_save_privileges_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/save_privileges' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_save_privileges_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/save_privileges' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_save_privileges_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/save_privileges' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_profile_pic_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/profile_pic' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_profile_pic_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/profile_pic' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_profile_pic_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/profile_pic' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_profile_pic_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/profile_pic' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_output_types_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/output_types' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_output_types_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/output_types' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_output_types_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/output_types' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_output_types_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/output_types' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_move_to_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/move_to' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_move_to_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/move_to' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_move_to_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/move_to' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_move_to_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/move_to' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_move_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/move' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_move_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/move' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_move_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/move' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_move_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/move' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_migrate_owner_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/migrate_owner' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_migrate_owner_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/migrate_owner' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_migrate_owner_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/migrate_owner' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_migrate_owner_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/migrate_owner' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_mark_un_purgeable_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/mark_un_purgeable' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_mark_un_purgeable_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/mark_un_purgeable' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_mark_un_purgeable_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/mark_un_purgeable' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_mark_un_purgeable_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/mark_un_purgeable' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_mark_un_archivable_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/mark_un_archivable' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_mark_un_archivable_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/mark_un_archivable' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_mark_un_archivable_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/mark_un_archivable' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_mark_un_archivable_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/mark_un_archivable' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_library_visible_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/library/visible' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_library_visible_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/library/visible' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_library_visible_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/library/visible' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_library_visible_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/library/visible' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_library_hide_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/library/hide' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_library_hide_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/library/hide' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_library_hide_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/library/hide' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_library_hide_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/library/hide' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_get_existing_links_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/get_existing_links' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_get_existing_links_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/get_existing_links' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_get_existing_links_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/get_existing_links' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_get_existing_links_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/get_existing_links' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_generate_token_link_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/generate_token_link' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_generate_token_link_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/generate_token_link' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_generate_token_link_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/generate_token_link' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_generate_token_link_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/generate_token_link' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_generate_link_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/generate_link' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_generate_link_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/generate_link' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_generate_link_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/generate_link' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_generate_link_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/generate_link' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_delete_exiting_links_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/delete_exiting_links' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_delete_exiting_links_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/delete_exiting_links' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_delete_exiting_links_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/delete_exiting_links' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_delete_exiting_links_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/delete_exiting_links' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_delete_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/delete' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_delete_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/delete' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_delete_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/delete' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_delete_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/delete' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_copy_to_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/copy_to' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_copy_to_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/copy_to' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_copy_to_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/copy_to' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_copy_to_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/copy_to' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_copy_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/copy' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_copy_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/copy' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_copy_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/copy' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_copy_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/copy' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_change_visibility_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/change_visibility' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_change_visibility_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/change_visibility' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_change_visibility_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/change_visibility' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_change_visibility_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/change_visibility' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_change_structure_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/change_structure' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_change_structure_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/change_structure' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_change_structure_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/change_structure' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_change_structure_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/change_structure' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_change_file_options_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/change_file_options' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_change_file_options_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/change_file_options' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_change_file_options_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/change_file_options' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_change_file_options_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/change_file_options' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_base_image_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/base_image' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_base_image_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/base_image' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_base_image_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/base_image' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_base_image_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/base_image' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_artifact_for_dash_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/artifact_for_dash' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_artifact_for_dash_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/artifact_for_dash' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_artifact_for_dash_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/artifact_for_dash' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_artifact_for_dash_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/artifact_for_dash' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_alertdelete_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/alertdelete' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_alertdelete_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/alertdelete' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_alertdelete_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/alertdelete' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_alertdelete_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/alertdelete' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_alertadd_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/alertadd' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_alertadd_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/alertadd' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_alertadd_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/alertadd' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_alertadd_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/alertadd' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_add_intl_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/add_intl' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_add_intl_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/add_intl' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_add_intl_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/add_intl' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_add_intl_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/add_intl' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_add_adhoc_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/add_adhoc' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_add_adhoc_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/add_adhoc' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_add_adhoc_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/add_adhoc' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_add_adhoc_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/add_adhoc' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_add_audit_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/add/audit' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_add_audit_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/add/audit' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_add_audit_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/add/audit' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_add_audit_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/add/audit' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_file_add_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/file/add' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_alert_add_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/alert/add' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_email_add_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/email/add' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_widget_add_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/widget/add' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_event_update_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/event/update' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_event_request_add_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/event/request/add' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_event_add_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/event/add' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_emailuser_upload_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/emailuser/upload' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_emailuser_update_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/emailuser/update' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_emailuser_delete_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/emailuser/delete' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_emailuser_add_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/emailuser/add' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_dept_dept_delete_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/dept/dept_delete' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_dept_add_dept_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/dept/add_dept' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_datasources_user_ex_db_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/datasources/user_ex_db' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_datasources_save_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/datasources/save' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_datasources_jsave_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/datasources/jsave' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_datasources_jedit_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/datasources/jedit' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_datasources_edit_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/datasources/edit' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_datasources_delete_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/datasources/delete' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_data_map_add_update_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/data_map/add_update' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_data_file_get_sheets_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/data_file/get_sheets' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_data_file_add_pipeline_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/data_file/add_pipeline' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_data_file_add_dataset_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/data_file/add_dataset' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_dashboard_submit_form_builder_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/dashboard/submit_form_builder' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_dashboard_save_word_dash_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/dashboard/save_word_dash' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_dashboard_save_excel_dash_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/dashboard/save_excel_dash' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_dashboard_save_dash_table_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/dashboard/save_dash_table' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_dashboard_add_scratch_dashboard_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/dashboard/add_scratch_dashboard' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_dashboard_add_dashboard_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/dashboard/add_dashboard' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_dashboard_add_app_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/dashboard/add_app' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_chat_rename_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/chat/rename' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_chat_add_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/chat/add' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_annotation_update_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/annotation/update' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_annotation_delete_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/annotation/delete' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_annotation_add_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/annotation/add' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# v5_api_ai_query_-_post \
+  curl --location 'http://localhost:8080/aiv/v5/api/ai/query' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# edit_report_adhoc_run_report_-_post \
+  curl --location 'http://localhost:8080/aiv/edit_report/adhoc_run_report' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
+
+# adhoc_adhoc_run_report_-_post \
+  curl --location 'http://localhost:8080/aiv/adhoc/adhoc_run_report' \
+  --header 'apitoken: eyJhbGciOiJIUzI1NiJ9.eyJkZXBhcnRtZW50IjoiRGVmYXVsdCIsInVzZXJuYW1lIjoiQWRtaW4iLCJzdWIiOiJBZG1pbiIsImlhdCI6MTczOTk3ODI5OSwiZXhwIjoxNzQwMTUxMDk5fQ.62lbEdCIc7TWnHibQLQR7ICqO1aHYqbJh6Z1qd3McKk' \
+  --header 'category: REPORTS' \
+  --header 'owner: ADMIN' \
+  --header 'archiveMode: false' \
+  --header 'timezone: SYSTEM' \
+  --header 'dc: Default' \
+  --header 'traceid: API' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "sampleAdditionalProperty": {}
+}'
